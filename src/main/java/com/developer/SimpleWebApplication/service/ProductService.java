@@ -16,7 +16,6 @@ public class ProductService {
     ProductRepo productRepo;
     public List<Product> getProducts(){
         List<Product> allProducts = productRepo.findAll();
-        allProducts.forEach(product -> System.out.println(product));
         return productRepo.findAll();
 
     }

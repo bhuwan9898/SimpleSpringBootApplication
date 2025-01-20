@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 @RestController
+@CrossOrigin
 public class ProductController {
     @Autowired
     ProductService service;
@@ -30,6 +31,4 @@ public class ProductController {
     public void deleteProduct(@PathVariable int prodId){
         service.deleteProduct(prodId);
     }
-
-
 }
